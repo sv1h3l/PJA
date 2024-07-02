@@ -1,0 +1,277 @@
+{
+  "plans": [
+    {
+      "owner": "jak@up.cz",
+      "date": "19.2.2024 v 21:22",
+      "forwardness": "BEGINNER",
+      "attendance": 7
+    },
+    {
+      "owner": "jak@up.cz",
+      "date": "19.2.2024 v 21:23",
+      "forwardness": "BEGINNER",
+      "attendance": 7
+    },
+    {
+      "owner": "jak@up.cz",
+      "date": "19.2.2024 v 21:24",
+      "forwardness": "BEGINNER",
+      "attendance": 7
+    },
+    {
+      "owner": "jak@up.cz",
+      "date": "31.3.2024 v 15:51",
+      "trainingDuration": "OWN",
+      "forwardness": "EXPERT",
+      "attendance": 2,
+      "scheduleOfDays": {
+        "scheduleOfDays": [
+          {
+            "scheduleOfExercises": [
+              {
+                "name": "přítahy osy v předklonu podhmatem",
+                "category": "záda",
+                "quantity": "38",
+                "unit": "kg",
+                "sets": "3",
+                "repetitions": "8"
+              },
+              {
+                "name": "přítahy jednoruční činky se zapřením o lavici",
+                "category": "záda",
+                "quantity": "24",
+                "unit": "kg",
+                "sets": "3",
+                "repetitions": "8"
+              },
+              {
+                "name": "stahování horní kladky v kleče podhmatem",
+                "category": "záda",
+                "quantity": "32",
+                "unit": "kg",
+                "sets": "3",
+                "repetitions": "10"
+              }
+            ]
+          },
+          {
+            "scheduleOfExercises": [
+              {
+                "name": "rozpažování",
+                "category": "prsa",
+                "quantity": "20",
+                "unit": "kg",
+                "sets": "3",
+                "repetitions": "10"
+              }
+            ]
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          },
+          {
+            "scheduleOfExercises": []
+          }
+        ]
+      }
+    }
+  ]
+}

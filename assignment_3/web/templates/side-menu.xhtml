@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:pja="http://xmlns.jcp.org/jsf/composite/pjacomp">
+    
+    <body>
+        vsechno mimo composition je ignorovano
+        
+        <ui:composition>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.xhtml">Home</a></li>
+                <li><a href="hello-ajax.xhtml">Hello World</a></li>
+                <li><a href="list.xhtml">List</a></li>
+                <li><a href="register.xhtml">Register</a></li>
+                <li><a href="bmi.xhtml">BMI</a></li>
+                <li><a href="forum.xhtml">Forum</a></li>
+                <li><a href="restricted-words.xhtml">Restricted Words</a></li>
+            </ul>
+            <pja:login showLoginDialog="false" target="list"/>
+        </ui:composition>
+    </body>
+</html>

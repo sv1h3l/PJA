@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/lecture06/ServiceBMI?wsdl" uri="src/conf/xml-resources/web-service-references/serviceBMI/wsdl/localhost_8080/lecture06/ServiceBMI.wsdl"/>
+    <system systemId="http://localhost:8080/lecture06/ServiceBMI?xsd=1" uri="src/conf/xml-resources/web-service-references/serviceBMI/wsdl/localhost_8080/lecture06/ServiceBMI.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/lecture06/ServiceBmi?wsdl" uri="wsdl/localhost_8080/lecture06/ServiceBmi.wsdl"/>
+    <system systemId="http://localhost:8080/lecture06/ServiceBmi?xsd=1" uri="wsdl/localhost_8080/lecture06/ServiceBmi.xsd_1.xsd"/>
+</catalog>

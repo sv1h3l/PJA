@@ -1,0 +1,36 @@
+header {
+    position: relative;
+    background-color: #e6ca7e;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 10px;
+    display: flex; /* Použití flexboxu */
+    justify-content: center; /* Vodorovné zarovnání na střed */
+    align-items: center; /* Vertikální zarovnání na střed */
+}
+
+
+nav {
+    float: left;
+    background-color: #EDD9A3;
+    padding: 5px;
+    width: 250px;
+    border-radius: 10px; /* Přidání zaoblených rohů */
+}
+
+.second-nav {
+    clear: left; /* Zajistí, že druhý nav bude pod prvním */
+    margin-top: 10px; /* Přidá odsazení mezi oběma nav */
+    background-color: #EDD9A3; /* Případné další styly pro druhý nav */
+    padding: 5px;
+    width: 250px;
+    border-radius: 10px; /* Přidání zaoblených rohů */
+}
+
+article {
+    float: right;
+    width: 910px;
+    padding: 10px;
+    background-color: #f2e5bf;
+    border-radius: 10px; /* Přidání zaoblených rohů */
+}

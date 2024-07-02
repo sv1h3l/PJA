@@ -1,0 +1,523 @@
+{
+  "plans": [
+    {
+      "owner": "jak@up.cz",
+      "date": "19.2.2024 v 21:22",
+      "trainingDuration": "krátká",
+      "forwardness": "BEGINNER",
+      "attendance": 7,
+      "concreteExercisesList": {
+        "concreteExercises": [
+          [
+            {
+              "name": "leg press",
+              "category": "nohy",
+              "quantity": "50",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "10"
+            },
+            {
+              "name": "předkopávání",
+              "category": "nohy",
+              "quantity": "22",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            },
+            {
+              "name": "francouzské tlaky s jednoručními činkami",
+              "category": "triceps",
+              "quantity": "8",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "francouzské tlaky s osou",
+              "category": "triceps",
+              "quantity": "16",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [
+            {
+              "name": "negativní shyby",
+              "category": "záda",
+              "quantity": "2",
+              "unit": "kg",
+              "sets": "4",
+              "repetitions": "10"
+            },
+            {
+              "name": "hyperextenze",
+              "category": "záda",
+              "quantity": "4",
+              "unit": "kg",
+              "sets": "4",
+              "repetitions": "8"
+            },
+            {
+              "name": "výpony ve stoje na jedné noze s jednoruční činkou",
+              "category": "lýtka",
+              "quantity": "18",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "výpony ve stoje s jednoručními činkami",
+              "category": "lýtka",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            }
+          ],
+          [
+            {
+              "name": "tlaky s jednoručními činkami na šikmé lavici hlavou nahoru",
+              "category": "prsa",
+              "quantity": "12",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "kliky",
+              "category": "prsa",
+              "quantity": "4",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "předávání overballu",
+              "category": "břicho",
+              "quantity": "0",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "12"
+            },
+            {
+              "name": "zkracovačky",
+              "category": "břicho",
+              "quantity": "2",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [
+            {
+              "name": "předpažování s jednoručními činkami",
+              "category": "přední delty",
+              "quantity": "10",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "tlaky s jednoručními činkami vsedě",
+              "category": "přední delty",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [
+            {
+              "name": "upažování s kladkou",
+              "category": "střední delty",
+              "quantity": "20",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            },
+            {
+              "name": "upažování s jednoruční činkou se zapřením",
+              "category": "střední delty",
+              "quantity": "12",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            }
+          ],
+          [
+            {
+              "name": "zapažování jednou rukou vleže na lavici",
+              "category": "zadní delty",
+              "quantity": "10",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "pack back",
+              "category": "zadní delty",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            }
+          ],
+          [
+            {
+              "name": "zdvihy na Scottově lavici s ez osou",
+              "category": "biceps",
+              "quantity": "16",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "kladivové zdvihy",
+              "category": "biceps",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "owner": "jak@up.cz",
+      "date": "19.2.2024 v 21:23",
+      "trainingDuration": "vlastní",
+      "forwardness": "BEGINNER",
+      "attendance": 7,
+      "concreteExercisesList": {
+        "concreteExercises": [
+          [],
+          [
+            {
+              "name": "zapažování jednou rukou vleže na lavici",
+              "category": "zadní delty",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "zapažování jednou rukou v předklonu",
+              "category": "zadní delty",
+              "quantity": "12",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "zapažování na TRX",
+              "category": "zadní delty",
+              "quantity": "0",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "12"
+            },
+            {
+              "name": "zdvihy na Scottově lavici s osou",
+              "category": "biceps",
+              "quantity": "24",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "zdvih jedoručních činek v sedě",
+              "category": "biceps",
+              "quantity": "18",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "12"
+            },
+            {
+              "name": "21",
+              "category": "biceps",
+              "quantity": "22",
+              "unit": "kg",
+              "sets": "1",
+              "repetitions": "21"
+            }
+          ],
+          [
+            {
+              "name": "zdvihy osy podhmatem",
+              "category": "biceps",
+              "quantity": "32",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "zdvihy osy nadhmatem",
+              "category": "biceps",
+              "quantity": "28",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "zdvihy ez osy podhmatem",
+              "category": "biceps",
+              "quantity": "32",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "zdvihy ez osy nadhmatem",
+              "category": "biceps",
+              "quantity": "28",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "přítahy protisměrných kladek",
+              "category": "biceps",
+              "quantity": "28",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            },
+            {
+              "name": "bicepsové přítahy na TRX",
+              "category": "biceps",
+              "quantity": "0",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            },
+            {
+              "name": "tlaky na TRX",
+              "category": "triceps",
+              "quantity": "0",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "10"
+            },
+            {
+              "name": "kliky na lavici",
+              "category": "triceps",
+              "quantity": "12",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "kickback s kladkou",
+              "category": "triceps",
+              "quantity": "22",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            }
+          ],
+          [
+            {
+              "name": "výpony v sedě na stroji",
+              "category": "lýtka",
+              "quantity": "28",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [],
+          [],
+          []
+        ]
+      }
+    },
+    {
+      "owner": "jak@up.cz",
+      "date": "19.2.2024 v 21:24",
+      "trainingDuration": "krátká",
+      "forwardness": "BEGINNER",
+      "attendance": 7,
+      "concreteExercisesList": {
+        "concreteExercises": [
+          [
+            {
+              "name": "výpady vpřed s osou",
+              "category": "nohy",
+              "quantity": "20",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "výpady vpřed s jednorucními činkami",
+              "category": "nohy",
+              "quantity": "10",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "kickback s kladkou",
+              "category": "triceps",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            },
+            {
+              "name": "francouzské tlaky s jednoručními činkami",
+              "category": "triceps",
+              "quantity": "8",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [
+            {
+              "name": "stahování horní kladky v sedě nadhmatem",
+              "category": "záda",
+              "quantity": "24",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "veslování",
+              "category": "záda",
+              "quantity": "80",
+              "unit": "sec",
+              "sets": "2",
+              "repetitions": "10"
+            },
+            {
+              "name": "výpony v sedě na jedné noze s jednoruční činkou",
+              "category": "lýtka",
+              "quantity": "18",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "výpony ve stoje s jednoručními činkami",
+              "category": "lýtka",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            }
+          ],
+          [
+            {
+              "name": "bench press na šikmé lavici hlavou nahoru",
+              "category": "prsa",
+              "quantity": "24",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "tlaky s jednoručními činkami na šikmé lavici hlavou nahoru",
+              "category": "prsa",
+              "quantity": "12",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "zkracovačky",
+              "category": "břicho",
+              "quantity": "2",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "předávání overballu",
+              "category": "břicho",
+              "quantity": "0",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "12"
+            }
+          ],
+          [
+            {
+              "name": "tlaky s jednoručními činkami vsedě",
+              "category": "přední delty",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            },
+            {
+              "name": "předpažování s kotoučem",
+              "category": "přední delty",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [
+            {
+              "name": "upažování s jednoruční činkou se zapřením",
+              "category": "střední delty",
+              "quantity": "12",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "8"
+            },
+            {
+              "name": "upažování s jednoručními činkami",
+              "category": "střední delty",
+              "quantity": "8",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ],
+          [
+            {
+              "name": "zapažování na TRX",
+              "category": "zadní delty",
+              "quantity": "0",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "12"
+            },
+            {
+              "name": "pack back",
+              "category": "zadní delty",
+              "quantity": "14",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            }
+          ],
+          [
+            {
+              "name": "zdvihy spodní kladky",
+              "category": "biceps",
+              "quantity": "24",
+              "unit": "kg",
+              "sets": "2",
+              "repetitions": "12"
+            },
+            {
+              "name": "vytáčení jednoručních činek",
+              "category": "biceps",
+              "quantity": "10",
+              "unit": "kg",
+              "sets": "3",
+              "repetitions": "10"
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

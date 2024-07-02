@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+    </head>
+    <body>
+        <ui:composition template="./templates/master-template.xhtml">
+
+            <ui:define name="top">
+                <ui:include src="./templates/page-header.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left">
+                <ui:include src="./templates/side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left2">
+                <ui:include src="./templates/second-side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="content">
+                <h2>Profil</h2>
+
+                <h:body>
+                    <h:form>
+                        <h:panelGrid columns="4">
+                            <h:outputText value="Datum registrace:" style="margin-right: 10px;"/>
+                            <h:outputText id="dateOfRegistration" value="#{profileController.dateOfRegistration}" style="margin-right: 200px;"/>
+
+                            <h:outputText value="Somatotyp:"/>
+                            <h:selectOneMenu id="somatotype" value="#{profileController.somatotype}">
+                                <f:selectItem itemValue="-" itemLabel="-"/>
+                                <f:selectItem itemValue="ektomorf" itemLabel="ektomorf"/>
+                                <f:selectItem itemValue="mesomorf" itemLabel="mesomorf"/>
+                                <f:selectItem itemValue="endomorf" itemLabel="endomorf"/>
+                            </h:selectOneMenu>
+
+                            <h:outputText value="Email:"/>
+                            <h:outputText id="email" value="#{profileController.email}"/>
+
+                            <h:outputText value="Pokročilost ve cvičení:" style="margin-right: 10px;"/>
+                            <h:selectOneMenu id="forwardness" value="#{profileController.forwardness}">
+                                <f:selectItem itemValue="začátečník" itemLabel="začátečník"/>
+                                <f:selectItem itemValue="pokročilý" itemLabel="pokročilý"/>
+                                <f:selectItem itemValue="expert" itemLabel="expert"/>
+                            </h:selectOneMenu>
+
+
+                            <h:outputText value="Jméno:"/>
+                            <h:inputText id="firstName" value="#{profileController.firstName}" validator="#{firstNameValidator.validate}"/>
+
+                            <h:outputText value="Navštěvuji posilovnu:"/>
+                            <h:panelGroup layout="block">
+                                <h:selectOneMenu id="attendance" value="#{profileController.attendance}">
+                                    <f:selectItem itemValue="1" itemLabel="1"/>
+                                    <f:selectItem itemValue="2" itemLabel="2"/>
+                                    <f:selectItem itemValue="3" itemLabel="3"/>
+                                    <f:selectItem itemValue="4" itemLabel="4"/>
+                                    <f:selectItem itemValue="5" itemLabel="5"/>
+                                    <f:selectItem itemValue="6" itemLabel="6"/>
+                                    <f:selectItem itemValue="7" itemLabel="7"/>
+                                </h:selectOneMenu>
+                                <h:outputText value=" krát týdně"/>
+                            </h:panelGroup>
+
+                            <h:outputText value="Příjmení:"/>
+                            <h:inputText id="secondName" value="#{profileController.secondName}" validator="#{secondNameValidator.validate}"/>
+
+                            <h:outputText value="Délka tréninku:"/>
+                            <h:selectOneMenu id="trainingDuration" value="#{profileController.trainingDuration}">
+                                <f:selectItem itemValue="krátká" itemLabel="krátká"/>
+                                <f:selectItem itemValue="střední" itemLabel="střední"/>
+                                <f:selectItem itemValue="dlouhá" itemLabel="dlouhá"/>
+                            </h:selectOneMenu>
+
+
+                        </h:panelGrid>
+
+                        <h:panelGrid columns="3">
+                            <h:outputText value="Nové heslo:"/>
+                            <h:inputSecret id="password" value="#{profileController.password}" binding="#{passwordComponent}"/> <span />
+
+                            <h:outputText value="Potvrzení hesla:" style="margin-right: 21px;"/>
+                            <h:inputSecret id="confirmPassword" value="#{profileController.confirmPassword}">
+                                <f:validator validatorId="passwordValidator" />
+                                <f:attribute name="passwordComponentBinding" value="#{passwordComponent}" />
+                            </h:inputSecret>
+
+                            <h:panelGrid columns="2">
+                                <h:commandButton type="submit" value="Zpět" action="#{profileController.back()}" style="margin-right: 25px; margin-left: 400px;"
+                                                 styleClass="secondaryButton" immediate="true"/>
+                                <h:commandButton type="submit" value="Uložit úpravy" action="#{profileController.change()}" 
+                                                 styleClass="primaryButton"/>
+                            </h:panelGrid>
+                        </h:panelGrid>
+                    </h:form>
+                </h:body>
+            </ui:define>
+
+        </ui:composition>
+    </body>
+</html>

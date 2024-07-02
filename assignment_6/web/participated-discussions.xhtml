@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <head>
+    </head>
+    <body>
+        <ui:composition template="./templates/master-template.xhtml">
+
+            <ui:define name="top">
+                <ui:include src="./templates/page-header.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left">
+                <ui:include src="./templates/side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="content">
+                <h2>Participated discussions</h2>
+                <h:form>
+                    <ui:repeat value="#{forumCtl.participatedDiscussions}" var="d">
+                        <h:outputText value="Topic: " /> <h:commandLink action="#{forumCtl.show(d)}">#{d.topic}</h:commandLink> 
+                        <br />
+                        <h:outputText value="Author: #{d.firstName}" /> &nbsp;&nbsp; <h:outputText value="Date: #{d.date}" /> &nbsp;&nbsp; <h:commandLink rendered="#{forumCtl.authorOfDiss(d.firstName)}" action="#{forumCtl.delete(d)}">Delete</h:commandLink>
+                        <br />
+                        <hr />
+                    </ui:repeat>
+                    <h:commandLink action="#{forumCtl.back()}">Back</h:commandLink><br />
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

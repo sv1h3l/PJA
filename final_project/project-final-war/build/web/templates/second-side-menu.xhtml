@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+        <ui:composition>
+            <style>
+                ul {
+                    margin-top: 0; /* Odstraní horní mezery */
+                }
+            </style>
+
+            <h:form>
+                <c:choose>
+                    <c:when test="#{loginController.loggedUser()}">
+                        <br /><span>Přihlášen jako: #{loginController.getUserName()}</span>
+                        <ul><br />
+                            <li><h:commandLink action="#{loginController.logout()}">Odhlásit se</h:commandLink></li>
+                        </ul>
+                    </c:when>
+                    <c:otherwise>
+                        <ul><br />
+                            <li><a href="login.xhtml">Přihlásit se</a></li><br />
+                            <li><a href="register.xhtml">Registrovat se</a></li>
+                        </ul>
+                    </c:otherwise>
+                </c:choose>
+            </h:form>
+
+        </ui:composition>
+    </body>
+</html>

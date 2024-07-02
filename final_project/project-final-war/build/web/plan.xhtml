@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <head>
+    </head>
+    <body>
+        <ui:composition template="./templates/master-template.xhtml">
+
+            <ui:define name="top">
+                <ui:include src="./templates/page-header.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left">
+                <ui:include src="./templates/side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left2">
+                <ui:include src="./templates/second-side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+                    #{planController.resetDate()}
+
+                    <h2>Tréninkový plán</h2>
+
+                    <b>Vygenerovaný dne #{planController.date} podle nasledujících udajů:</b>
+                    <h:panelGrid columns="3">
+                        <h:outputText value="Pokročilost ve cvičení: #{planController.forwardness}" style="margin-right: 50px;"/>
+
+                        <h:outputText value="Návštěva posilovny: #{planController.attendance} krát týdně" style="margin-right: 50px;"/>
+
+                        <h:outputText value="Délka tréninku: #{planController.trainingDuration}" style="margin-right: 50px;"/>
+                    </h:panelGrid> 
+
+
+                    <ui:repeat value="#{planController.getDays()}" var="day">
+
+                        <br /> <b>
+                            <h:outputText value="#{planController.isNewDay() ? planController.dayCounter() : ''}" />
+                        </b><br />
+                        <ui:repeat value="#{day}" var="exercise">
+
+                            <b>
+                                <h:outputText value="#{planController.isNewCategory(exercise) ? planController.actualCategory : ''}" style="margin-left: 20px" />
+                            </b>
+
+
+
+                            <h:panelGrid columns="3">
+                                <h:outputText value="#{exercise.name}" style="margin-left: 40px"/>
+                                <h:panelGroup style="display: flex; margin-top: -10px;">
+                                    <h:outputText value="#{exercise.sets} x #{planController.getRepetitions(exercise.repetitions)}" style="position: absolute; left: 1100px;" />
+                                    <h:outputText value="#{planController.getQuantity(exercise.quantity, exercise.unit)}" style="position: absolute; left: 1200px;" />
+                                </h:panelGroup>
+                            </h:panelGrid>
+                        </ui:repeat >
+                    </ui:repeat>
+
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+    </body>
+</html>

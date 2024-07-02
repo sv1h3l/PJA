@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+
+    <body>
+        <ui:composition>
+            <style>
+                ul {
+                    margin-top: 0; /* Odstraní horní mezery */
+                }
+            </style>
+
+            <br /><ul>
+                <li><a href="profile.xhtml">Profil</a></li><br />
+                <li><a href="history.xhtml">Historie tréninků</a></li>
+
+            </ul>
+
+            <span>Tvorba tréninkových plánů:</span>
+            <ul>
+                <li><a href="automatic_creator.xhtml">Automatické generování</a></li>
+                <li><a href="manual_creator.xhtml">Manuální tvorba</a></li>
+            </ul>
+            <!--<pja:login showLoginDialog="false" target="list"/>-->
+        </ui:composition>
+    </body>
+</html>

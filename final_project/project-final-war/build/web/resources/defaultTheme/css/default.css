@@ -1,0 +1,50 @@
+body {
+    background-color: #1d1d24;
+    font-size: 12pt;
+    font-family:  sans-serif;
+    color: #1d1d24;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+h1 {
+    font-size:  30pt;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d24;
+}
+
+.ui-selectmanycheckbox .ui-chkbox-box {
+    display: block; /* nebo inline-block */
+}
+
+.primaryButton {
+    background-color: #e6ca7e;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.secondaryButton {
+    background-color: #f2e5bf;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+a:link, a:visited {
+    color: #3366cc;
+    font-weight : bold;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+    color: #3366cc;
+    ;
+    font-weight : bold;
+    text-decoration : underline;
+}

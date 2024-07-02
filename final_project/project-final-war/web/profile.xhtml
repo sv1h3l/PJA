@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+    </head>
+    <body>
+        <ui:composition template="./templates/master-template.xhtml">
+
+            <ui:define name="top">
+                <ui:include src="./templates/page-header.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left">
+                <ui:include src="./templates/side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left2">
+                <ui:include src="./templates/second-side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="content">
+                <h2>Profil</h2>
+
+                <h:body>
+
+
+                    <h:form>
+                        <h:panelGrid columns="4">
+
+                            <h:outputText value="Datum registrace:" style="margin-right: 10px;"/>
+                            <h:outputText id="dateOfRegistration" value="#{profileController.dateOfRegistration}" style="margin-right: 200px;"/>
+
+                            <h:outputText value="Somatotyp:"/>
+                            <h:outputText id="somatotype" value="#{profileController.somatotype}"/>
+
+                            <h:outputText value="Email:"/>
+                            <h:outputText id="email" value="#{profileController.email}"/>
+
+                            <h:outputText value="Pokročilost ve cvičení:" style="margin-right: 10px;"/>
+                            <h:outputText id="forwardness" value="#{profileController.forwardness}"/>
+
+                            <h:outputText value="Jméno:"/>
+                            <h:outputText id="firstName" value="#{profileController.firstName}"/>
+
+                            <h:outputText value="Navštěvuji posilovnu:"/>
+                            <h:panelGroup layout="block">
+                                <h:outputText id="attendance" value="#{profileController.attendance}"/>
+                                <h:outputText value=" krát týdně"/>
+                            </h:panelGroup>
+
+                            <h:outputText value="Příjmení:"/>
+                            <h:outputText id="secondName" value="#{profileController.secondName}"/>
+
+                            <h:outputText value="Délka tréninku:"/>
+                            <h:outputText id="trainingDuration" value="#{profileController.trainingDuration}"/>
+
+
+                        </h:panelGrid>
+
+                        <h:commandButton type="submit" value="Upravit údaje" action="#{profileController.profileChanger()}" style="margin-left: 800px;"
+                                         styleClass="primaryButton"/>
+
+                    </h:form>
+                </h:body>
+            </ui:define>
+
+        </ui:composition>
+    </body>
+</html>

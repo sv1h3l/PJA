@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./templates/master-template.xhtml">
+
+            <ui:define name="top">
+                <ui:include src="./templates/page-header.xhtml "/>
+            </ui:define>
+
+            <ui:define name="left">
+                <ui:include src="./templates/side-menu.xhtml "/>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+                    <h2>#{forumCtl.discussion.topic}</h2>
+                    <h:outputText value="Content:" /><br /> <h:outputText value="#{forumCtl.discussion.content}" /><br /><br />
+
+                    <h:outputText value="Discussion author: "/> <h:outputText value="#{forumCtl.discussion.firstName}" /> &nbsp; &nbsp;
+                    <h:outputText value="Date: " /> <h:outputText value="#{forumCtl.discussion.date}" /> <hr style="border-top: dotted 1px;"/>
+
+                        <h:form>
+                            <h:dataTable value="#{forumCtl.getParticipatedUsers()}" var="u">
+                                <h:column>
+                                    <f:facet name="header">User</f:facet>
+                                    #{u.firstName}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </h:column>
+
+                                <h:column>
+                                    <f:facet name="header">Written posts</f:facet>
+                                        #{u.numberOfPosts}
+                                </h:column>
+
+                            </h:dataTable>
+
+                        </h:form><hr /><hr />
+
+                    <ui:repeat value="#{forumCtl.discussion.posts}" var="post">
+                        <h:outputText value="Content:"/> <br /> <h:outputText value="#{post.content}" /><br /><br />
+
+                        <h:outputText value="Post author: "/> <h:outputText value="#{post.firstName}" /> &nbsp; &nbsp;
+                        <h:outputText value="Date: "/> <h:outputText value="#{post.date}" /> &nbsp;&nbsp; <h:commandLink rendered="#{forumCtl.authorOfDiss(forumCtl.discussion.firstName)}" action="#{forumCtl.deletePost(post)}">Delete</h:commandLink><hr />
+                    </ui:repeat>
+
+                    <h:commandLink rendered="#{activeSession.userLoggedIn()}" action="post-new">New post</h:commandLink> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <h:commandLink rendered="#{activeSession.userLoggedIn()}" action="#{forumCtl.deleteMyPosts()}">Delete my posts</h:commandLink><br />
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
