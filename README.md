@@ -1,6 +1,6 @@
 ## Plarforma Java
 
-Repozitář pro předmět **Plarforma Java** (KMI/PJA).
+Repozitář pro předmět **Plarforma Java**.
 
 
 ####  Náplň předmětu
